@@ -1,0 +1,111 @@
+// reset
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: #1B1B1B;
+    color: white;
+    font-family: 'josefin sans';
+}
+
+.search-section{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: black;
+    input{
+        display: inline-block;
+        padding: 7px 14px;
+        margin: 10px;
+        border: 2px solid black;
+        border-radius: 15px;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+}
+
+.drinks-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    .drink{
+        position: relative;
+        border: 4px solid #E5E5CB;
+        border-radius: 15px;
+        padding: 5px;
+        width: 320px;
+        text-align: center;
+        margin: 25px;
+        img{
+            width: 100%;
+        }
+        .drink-name{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 1.6rem;
+        }
+        .drink-category{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 1.3rem;
+        }
+        button{
+            position: relative;
+            z-index: 2;
+            font-family: 'josefin sans';
+            padding: 10px 5px;
+            border: 1px solid #E5E5CB;
+            background-color: #1B1B1B;
+            color: white;
+            cursor: pointer;
+        }
+        .show-after-click{
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            background:rgba(0,0,0,0);
+            margin: 5px;
+            &.active{
+                background:rgba(0,0,0,0.8);
+                opacity: 1;
+                z-index: auto;
+            }
+            .drink-summary{
+                font-size: 1.4rem;
+                padding: 10px;
+            }
+            .drink-ingredients{
+                margin-top: 25px;
+                h3{
+                    font-size: 1.5rem;
+                }
+                ul{
+                    font-size: 1.2rem;
+                    li{
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.empty{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+}

@@ -1,0 +1,122 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #1B1B1B;
+  color: white;
+  font-family: "josefin sans";
+}
+
+.search-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  background-color: black;
+}
+.search-section input {
+  display: inline-block;
+  padding: 7px 14px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.drinks-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+.drinks-section .drink {
+  position: relative;
+  border: 4px solid #E5E5CB;
+  border-radius: 15px;
+  padding: 5px;
+  width: 320px;
+  text-align: center;
+  margin: 25px;
+}
+.drinks-section .drink img {
+  width: 100%;
+}
+.drinks-section .drink .drink-name {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.6rem;
+}
+.drinks-section .drink .drink-category {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+.drinks-section .drink button {
+  position: relative;
+  z-index: 2;
+  font-family: "josefin sans";
+  padding: 10px 5px;
+  border: 1px solid #E5E5CB;
+  background-color: #1B1B1B;
+  color: white;
+  cursor: pointer;
+}
+.drinks-section .drink .show-after-click {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0);
+  margin: 5px;
+}
+.drinks-section .drink .show-after-click.active {
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  z-index: auto;
+}
+.drinks-section .drink .show-after-click .drink-summary {
+  font-size: 1.4rem;
+  padding: 10px;
+}
+.drinks-section .drink .show-after-click .drink-ingredients {
+  margin-top: 25px;
+}
+.drinks-section .drink .show-after-click .drink-ingredients h3 {
+  font-size: 1.5rem;
+}
+.drinks-section .drink .show-after-click .drink-ingredients ul {
+  font-size: 1.2rem;
+}
+.drinks-section .drink .show-after-click .drink-ingredients ul li {
+  margin-top: 10px;
+}
+
+.empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 5rem;
+}/*# sourceMappingURL=main.css.map */
